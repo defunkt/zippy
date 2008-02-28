@@ -1,4 +1,4 @@
-%w(rubygems cgi hpricot net/http open-uri).each { |f| require f } 
+%w( rubygems cgi hpricot net/http open-uri ).each { |f| require f } 
 # => chris[at]ozmm[dot]org
 
 ##
@@ -50,7 +50,7 @@ private
 end
 
 if $0 == __FILE__
-  %w(test/spec mocha zlib base64).each { |f| require f }
+  %w( test/spec mocha zlib base64 ).each { |f| require f }
 
   html = Zlib::Inflate.new.inflate(Base64.decode64(DATA.read))
 
