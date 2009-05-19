@@ -2,4 +2,4 @@
 
 require 'zippy'
 
-puts Zippy.find(ARGV[0], ARGV[1])
+puts Zippy.find(ARGV[0], ARGV[1]).inspect
